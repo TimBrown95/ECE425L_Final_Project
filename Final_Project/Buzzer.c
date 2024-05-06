@@ -194,6 +194,8 @@ void beep(int note, unsigned int duration)
 }
 
 
+
+
 void Song_Select(uint8_t edubase_button_status)
 {
 	switch(edubase_button_status)	
@@ -201,7 +203,7 @@ void Song_Select(uint8_t edubase_button_status)
 		// No buttons are pressed
 		case 0x00:
 		{
-			
+			EduBase_LCD_Print_Text("Press a button", "to play a song");
 		}
 		break;
 		
@@ -314,118 +316,120 @@ void Song_Select(uint8_t edubase_button_status)
 		case 0x02:
 		{
 			EduBase_LCD_Print_Text("Song", "Super Mario Bros");
-				beep(E5 ,150);
-				beep(E5 ,150);
-				beep(E5 ,150);
+				beep(E5 ,100);
+			SysTick_Delay1ms(3);
+				beep(E5 ,100);
+			SysTick_Delay1ms(3);
+				beep(E5 ,100);
 				SysTick_Delay1ms(3);
-				beep(C5 ,150);
-				beep(E5 ,150);
-				beep(G5 ,150);
-				beep(G4 ,150);
+				beep(C5 ,100);
+				beep(E5 ,100);
+				beep(G5 ,100);
+				beep(G4 ,100);
 	
-				beep(C5 ,150);
+				beep(C5 ,100);
 				SysTick_Delay1ms(3);
-				beep(G4 ,150);
+				beep(G4 ,100);
 				SysTick_Delay1ms(6);
-				beep(E4 ,150);
+				beep(E4 ,100);
 				SysTick_Delay1ms(3);
-				beep(A4 ,150);
+				beep(A4 ,100);
 				SysTick_Delay1ms(3);
-				beep(B4 ,150);
+				beep(B4 ,100);
 				SysTick_Delay1ms(3);
-				beep(AS4,150);
-				beep(A4 ,150);
+				beep(AS4,100);
+				beep(A4 ,100);
 	
-				beep(G4 ,150);
-				beep(E5 ,150);
-				beep(G5 ,150);
-				beep(A5 ,150);
-				beep(F5 ,150);
-				beep(G5 ,150);
+				beep(G4 ,100);
+				beep(E5 ,100);
+				beep(G5 ,100);
+				beep(A5 ,100);
+				beep(F5 ,100);
+				beep(G5 ,100);
 				SysTick_Delay1ms(3);
-				beep(E5 ,150);
+				beep(E5 ,100);
 				SysTick_Delay1ms(3);
-				beep(C5 ,150);
-				beep(D5 ,150);
-				beep(B4 ,150);
+				beep(C5 ,100);
+				beep(D5 ,100);
+				beep(B4 ,100);
 				SysTick_Delay1ms(6);
 				
-				beep(C5 ,150);
+				beep(C5 ,100);
 				SysTick_Delay1ms(3);
-				beep(G4 ,150);
+				beep(G4 ,100);
 				SysTick_Delay1ms(6);
-				beep(E4 ,150);
+				beep(E4 ,100);
 				SysTick_Delay1ms(3);
-				beep(A4 ,150);
+				beep(A4 ,100);
 				SysTick_Delay1ms(3);
-				beep(B4 ,150);
+				beep(B4 ,100);
 				SysTick_Delay1ms(3);
-				beep(AS4,150);
-				beep(A4 ,150);
+				beep(AS4,100);
+				beep(A4 ,100);
 				
-				beep(G4 ,150);
-				beep(E5 ,150);
-				beep(G5 ,150);
-				beep(A5 ,150);
-				beep(F5 ,150);
-				beep(G5 ,150);
+				beep(G4 ,100);
+				beep(E5 ,100);
+				beep(G5 ,100);
+				beep(A5 ,100);
+				beep(F5 ,100);
+				beep(G5 ,100);
 				SysTick_Delay1ms(3);
-				beep(E5 ,150);
+				beep(E5 ,100);
 				SysTick_Delay1ms(3);
-				beep(C5 ,150);
-				beep(D5 ,150);
-				beep(B4 ,150);
+				beep(C5 ,100);
+				beep(D5 ,100);
+				beep(B4 ,10);
 				SysTick_Delay1ms(6);
 
 				SysTick_Delay1ms(6);
-				beep(G5 ,150);
-				beep(FS5,150);
-				beep(F5 ,150);
-				beep(DS5,150);
-				beep(E5 ,150);
+				beep(G5 ,100);
+				beep(FS5,100);
+				beep(F5 ,100);
+				beep(DS5,100);
+				beep(E5 ,100);
 				SysTick_Delay1ms(3);
-				beep(GS4,150);
-				beep(A4 ,150);
-				beep(C5 ,150);
+				beep(GS4,100);
+				beep(A4 ,100);
+				beep(C5 ,100);
 				SysTick_Delay1ms(3);
-				beep(A4 ,150);
-				beep(C5 ,150);
-				beep(D5 ,150);
+				beep(A4 ,100);
+				beep(C5 ,100);
+				beep(D5 ,100);
 
 				SysTick_Delay1ms(6);
-				beep(G5 ,150);
-				beep(FS5,150);
-				beep(F5 ,150);
-				beep(DS5,150);
-				beep(E5 ,150);
+				beep(G5 ,100);
+				beep(FS5,100);
+				beep(F5 ,100);
+				beep(DS5,100);
+				beep(E5 ,100);
 				SysTick_Delay1ms(3);
-				beep(C6 ,150);
+				beep(C6 ,100);
 				SysTick_Delay1ms(3);
-				beep(C6 ,150);
-				beep(C6 ,150);
+				beep(C6 ,100);
+				beep(C6 ,100);
 
 
 				SysTick_Delay1ms(6);
-				beep(G5 ,150);
-				beep(FS5,150);
-				beep(F5 ,150);
-				beep(DS5,150);
-				beep(E5 ,150);
+				beep(G5 ,100);
+				beep(FS5,100);
+				beep(F5 ,100);
+				beep(DS5,100);
+				beep(E5 ,100);
 				SysTick_Delay1ms(3);
-				beep(GS4,150);
-				beep(A4 ,150);
-				beep(C5 ,150);
+				beep(GS4,100);
+				beep(A4 ,100);
+				beep(C5 ,100);
 				SysTick_Delay1ms(3);
-				beep(A4 ,150);
-				beep(C5 ,150);
-				beep(D5 ,150);
+				beep(A4 ,100);
+				beep(C5 ,100);
+				beep(D5 ,100);
 
 				SysTick_Delay1ms(6);
-				beep(DS5,150);
+				beep(DS5,100);
 				SysTick_Delay1ms(3);
-				beep(D5 ,150);
+				beep(D5 ,100);
 				SysTick_Delay1ms(6);
-				beep(C5 ,150);
+				beep(C5 ,100);
 				SysTick_Delay1ms(12);
 
 		}
@@ -434,14 +438,250 @@ void Song_Select(uint8_t edubase_button_status)
 		// When SW3 is pressed, the Mexican Hat Dance Theme is played
 		case 0x04:
 		{
+			EduBase_LCD_Print_Text("Song", "Tetris");
+				beep(E5, 100);
+				beep(B4,200);
+				beep(C5,200);
+				beep(D5,100);
+				beep(C5,200);
+				beep(B4,200);
+				beep(A4, 100);
+				beep(A4,200);
+				beep(C5,200);
+				beep(E5,100);
+				beep(D5,200);
+				beep(C5,200);
+
+				beep(B4, 100);
+				beep(C5,200);
+				beep(D5,100);
+				beep(E5,100);
+				beep(C5, 100);
+				beep(A4,100);
+				beep(A4,200);
+				beep(A4,100);
+				beep(B4,200);
+				beep(C5,200);
+
+				beep(D5, 100);
+				beep(F5,200);
+				beep(A5,100);
+				beep(G5,200);
+				beep(F5,200);
+
+				beep(E5, 100);
+				beep(C5,200);
+				beep(E5,100);
+				beep(D5,200);
+				beep(C5,200);
+
+				beep(B4,100);
+				beep(B4,200);
+				beep(C5,200);
+				beep(D5,100);
+				beep(E5,100);
+
+				beep(C5, 100);
+				beep(A4,100);
+				beep(A4,100);
+				SysTick_Delay1ms(100);
+
+				beep(E5, 100);
+				beep(B4,200);
+				beep(C5,200);
+				beep(D5,100);
+				beep(C5,200);
+				beep(B4,200);
+
+				beep(A4, 100);
+				beep(A4,200);
+				beep(C5,200);
+				beep(E5,100);
+				beep(D5,200);
+				beep(C5,200);
+
+				beep(B4, 100);
+				beep(C5,200);
+				beep(D5,100);
+				beep(E5,100);
+
+				beep(C5, 100);
+				beep(A4,100);
+				beep(A4,200);
+				beep(A4,100);
+				beep(B4,200);
+				beep(C5,200);
+
+				beep(D5, 100);
+				beep(F5,200);
+				beep(A5,100);
+				beep(G5,200);
+				beep(F5,200);
+
+				beep(E5, 100);
+				beep(C5,200);
+				beep(E5,100);
+				beep(D5,200);
+				beep(C5,200);
+
+				beep(B4, 100);
+				beep(B4,200);
+				beep(C5,200);
+				beep(D5,100);
+				beep(E5,100);
+
+				beep(C5, 100);
+				beep(A4,100);
+				beep(A4,100);
+
+				SysTick_Delay1ms(100);
+
+
+				beep(E5,50);
+				beep(C5,50);
+
+				beep(D5,50);
+				beep(B4,50);
+
+				beep(C5,50);
+				beep(A4,50);
+
+				beep(GS4,50);
+				beep(B4,100);
+
+				SysTick_Delay1ms(200);
+				
+				beep(E5,50);
+				beep(C5,50);
+				beep(D5,50);
+				beep(B4,50);
+
+				beep(C5,100);
+				beep(E5,100);
+				beep(A5,50);
+				beep(GS5,50);
+
+
 			
 		}
 		break;
 		
 		
-		default:
+		case 0x08:
 		{
-		
+		// When SW2 is pressed, "Take on Me" is played
+			
+			EduBase_LCD_Print_Text("Song", "Aha - Take On Me");
+
+				beep(FS5,100);
+				beep(FS5,100);
+				beep(D5,100);
+				beep(B4,100);
+				SysTick_Delay1ms(100);
+				beep(B4,100);
+				SysTick_Delay1ms(100);
+				beep(E5,100);
+
+				SysTick_Delay1ms(100);
+				beep(E5,100);
+				SysTick_Delay1ms(100);
+				beep(E5,100);
+				beep(GS5,100);
+				beep(GS5,100);
+				beep(A5,100);
+				beep(B5,100);
+
+				beep(A5,100);
+				beep(A5,100);
+				beep(A5,100);
+				beep(E5,100);
+				SysTick_Delay1ms(100);
+				beep(D5,100);
+				SysTick_Delay1ms(100);
+				beep(FS5,100);
+
+				SysTick_Delay1ms(100);
+				beep(FS5,100);
+				SysTick_Delay1ms(100);
+				beep(FS5,100);
+				beep(E5,100);
+				beep(E5,100);
+				beep(FS5,100);
+				beep(E5,100);
+
+				beep(FS5,100);
+				beep(FS5,100);
+				beep(D5,100);
+				beep(B4,100);
+				SysTick_Delay1ms(100);
+				beep(B4,100);
+				SysTick_Delay1ms(100);
+				beep(E5,100); 
+
+				SysTick_Delay1ms(100);
+				beep(E5,100);
+				SysTick_Delay1ms(100);
+				beep(E5,100);
+				beep(GS5,100);
+				beep(GS5,100);
+				beep(A5,100);
+				beep(B5,100);
+
+				beep(A5,100);
+				beep(A5,100);
+				beep(A5,100);
+				beep(E5,100);
+				SysTick_Delay1ms(100);
+				beep(D5,100);
+				SysTick_Delay1ms(100);
+				beep(FS5,100);
+
+				SysTick_Delay1ms(100);
+				beep(FS5,100);
+				SysTick_Delay1ms(100);
+				beep(FS5,100);
+				beep(E5,100);
+				beep(E5,100);
+				beep(FS5,100);
+				beep(E5,100);
+
+				beep(FS5,100);
+				beep(FS5,100);
+				beep(D5,100);
+				beep(B4,100);
+				SysTick_Delay1ms(100);
+				beep(B4,100);
+				SysTick_Delay1ms(100);
+				beep(E5,100);
+
+				SysTick_Delay1ms(100);
+				beep(E5,100);
+				SysTick_Delay1ms(100);
+				beep(E5,100);
+				beep(GS5,100);
+				beep(GS5,100);
+				beep(A5,100);
+				beep(B5,100);
+
+				beep(A5,100);
+				beep(A5,100);
+				beep(A5,100);
+				beep(E5,100);
+				SysTick_Delay1ms(100);
+				beep(D5,100);
+				SysTick_Delay1ms(100);
+				beep(FS5,100);
+
+				SysTick_Delay1ms(100);
+				beep(FS5,100);
+				SysTick_Delay1ms(100);
+				beep(FS5,100);
+				beep(E5,100);
+				beep(E5,100);
+				beep(FS5,100);
+				beep(E5,100);
+
+			
 			
 		}
 	}

@@ -199,6 +199,8 @@ void Buzzer_Output(uint8_t buzzer_value);
  */
 void beep(int note, unsigned int duration);
 
+void NOTE(int note, unsigned int duration);
+
 void Mario(void);
 
 void PlaySongs(uint8_t button_status);
